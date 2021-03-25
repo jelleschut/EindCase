@@ -1,0 +1,24 @@
+<h1>  Weekoverzicht</h1>
+<label for="week"><h2>Week:</h2></label>
+<input (change)="getWeekInstances()" type="number" name="week" id="week" [value]="week" [(ngModel)]="week">
+<label for="year"><h2>Jaar:</h2></label>
+<input (change)="getWeekInstances()" type="number" name="year" id="year" [value]="year" [(ngModel)]="year">
+
+<table class="table table-striped table-bordered table-hover table-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th>Start Date</th>
+      <th>Title</th>
+      <th>Length</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let instance of weekInstances">
+      <td>{{ instance.startDate | formatDate}}</td>
+      <td>{{ instance.course.title }}</td>
+      <td>{{ instance.course.lengthInDays }}</td>
+      <td>{{ instance.course.code }}</td>
+    </tr>
+  </tbody>
+</table>

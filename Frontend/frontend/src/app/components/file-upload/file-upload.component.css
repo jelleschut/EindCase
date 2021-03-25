@@ -1,0 +1,15 @@
+.valid-upload-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+
+.duplicate-message {
+  color: red;
+  font-weight: bold;
+}
