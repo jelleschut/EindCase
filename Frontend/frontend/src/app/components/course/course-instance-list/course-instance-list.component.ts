@@ -13,8 +13,8 @@ export class CourseInstanceListComponent implements OnInit, OnChanges {
   @Input() update: boolean;
   @Output() reset: EventEmitter<boolean> = new EventEmitter();
 
-  courseInstances: CourseInstance[];
-  weekInstances: CourseInstance[];
+  courseInstances: CourseInstance[] = [];
+  weekInstances: CourseInstance[] = [];
   week: number;
   year: number;
 
@@ -38,8 +38,10 @@ export class CourseInstanceListComponent implements OnInit, OnChanges {
 
   getAllInstances() {
     this.courseInstanceService.getAll().subscribe((courseInstances) => {
-      this.courseInstances = courseInstances;
-      this.getWeekInstances();
+      if(courseInstances) {
+        this.courseInstances = courseInstances;
+        this.getWeekInstances();
+      }
       this.reset.emit(false);
     });
   }
@@ -51,5 +53,25 @@ export class CourseInstanceListComponent implements OnInit, OnChanges {
         +this.datepipe.transform(value.startDate, 'yyyy') === this.year
       );
     });
+  }
+
+  getPreviousWeek() {
+    if(this.week === 1) {
+      this.year--;
+      this.week = +this.datepipe.transform(`${this.year}-12-27`, 'w');
+    } else {
+      this.week--;
+    }
+    this.getWeekInstances();
+  }
+
+  getNextWeek() {
+    if(this.week === +this.datepipe.transform(`${this.year}-12-27`, 'w')) {
+      this.week = 1;
+      this.year++;
+    } else {
+      this.week++;
+    }
+    this.getWeekInstances();
   }
 }

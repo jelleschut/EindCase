@@ -1,0 +1,19 @@
+Titel: Azure Fundamentals
+Cursuscode: AZF
+Duur: 5 dagen
+Startdatum: 15/06/2021
+
+Titel: Azure Advanced
+Cursuscode: AZA
+Duur: 5 dagen
+Startdatum: 15/06/2021
+
+Titel: Azure Fundamentals
+Cursuscode: AZF
+Duur: 5 dagen
+Startdatum: 01/01/2021
+
+Titel: Azure Advanced
+Cursuscode: AZA
+Duur: 5 dagen
+Startdatum: 30/06/2021

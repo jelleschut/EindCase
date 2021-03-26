@@ -42,16 +42,6 @@ namespace EindCase.DAL.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            migrationBuilder.InsertData(
-                table: "Courses",
-                columns: new[] { "CourseId", "Code", "LengthInDays", "Title" },
-                values: new object[] { 1, "C1", 5, "Course 1" });
-
-            migrationBuilder.InsertData(
-                table: "Courses",
-                columns: new[] { "CourseId", "Code", "LengthInDays", "Title" },
-                values: new object[] { 2, "C2", 3, "Course 2" });
-
             migrationBuilder.CreateIndex(
                 name: "IX_CourseInstances_CourseId",
                 table: "CourseInstances",

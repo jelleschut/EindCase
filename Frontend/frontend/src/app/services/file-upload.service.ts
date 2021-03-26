@@ -7,7 +7,7 @@ import { UpdateResult } from '../models/update-result';
   providedIn: 'root'
 })
 export class FileUploadService {
-  private url = 'https://localhost:5001/api/fileupload'
+  private url = 'https://localhost:44313/api/fileupload'
 
   constructor(private httpClient: HttpClient) { }
 

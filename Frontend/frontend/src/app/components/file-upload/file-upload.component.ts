@@ -29,9 +29,11 @@ export class FileUploadComponent implements OnInit {
     formData.append('file', this.file);
 
     this.FileUploadService.upload(formData).subscribe((response) => {
-      this.result = response;
-      this.validUpload = !response.error;
-      this.updateList.emit(this.validUpload);
+      if(response) {
+        this.result = response;
+        this.validUpload = !response.error;
+        this.updateList.emit(this.validUpload);
+      }
     });
   }
 }

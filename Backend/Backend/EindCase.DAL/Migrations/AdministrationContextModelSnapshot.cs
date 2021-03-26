@@ -40,22 +40,6 @@ namespace EindCase.DAL.Migrations
                     b.HasKey("CourseId");
 
                     b.ToTable("Courses");
-
-                    b.HasData(
-                        new
-                        {
-                            CourseId = 1,
-                            Code = "C1",
-                            LengthInDays = 5,
-                            Title = "Course 1"
-                        },
-                        new
-                        {
-                            CourseId = 2,
-                            Code = "C2",
-                            LengthInDays = 3,
-                            Title = "Course 2"
-                        });
                 });
 
             modelBuilder.Entity("EindCase.Domain.Models.CourseInstance", b =>

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EindCase.DAL.Migrations
 {
     [DbContext(typeof(AdministrationContext))]
-    [Migration("20210323124649_InitialCreate")]
+    [Migration("20210326132945_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,22 +42,6 @@ namespace EindCase.DAL.Migrations
                     b.HasKey("CourseId");
 
                     b.ToTable("Courses");
-
-                    b.HasData(
-                        new
-                        {
-                            CourseId = 1,
-                            Code = "C1",
-                            LengthInDays = 5,
-                            Title = "Course 1"
-                        },
-                        new
-                        {
-                            CourseId = 2,
-                            Code = "C2",
-                            LengthInDays = 3,
-                            Title = "Course 2"
-                        });
                 });
 
             modelBuilder.Entity("EindCase.Domain.Models.CourseInstance", b =>

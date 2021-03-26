@@ -66,6 +66,7 @@ namespace EindCase.Api
 
             app.UseEndpoints(endpoints =>
             {
+
                 endpoints.MapControllers();
             });
         }

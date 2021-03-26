@@ -7,7 +7,7 @@ import { CourseInstance } from '../models/course-instance';
   providedIn: 'root'
 })
 export class CourseInstanceService {
-  private url = 'https://localhost:5001/api/courseinstances'
+  private url = 'https://localhost:44313/api/courseinstances'
 
   constructor(private httpClient: HttpClient) { }
 

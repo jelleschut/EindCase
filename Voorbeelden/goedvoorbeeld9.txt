@@ -1,0 +1,25 @@
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 8/04/2021
+
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 15/05/2021
+
+Titel: Java Persistence API
+Cursuscode: JPA
+Duur: 2 dagen
+Startdatum: 15/04/2021
+
+Titel: Java Persistence API
+Cursuscode: JPA
+Duur: 2 dagen
+Startdatum: 8/05/2021
+
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 8/03/2021
+

@@ -1,0 +1,85 @@
+Titel: Object Oriented Programming in C# By Example
+Cursuscode: OOCS
+Duur: 5 dagen
+Startdatum: 22/03/2021
+
+Titel: LINQ: .NET Language-Integrated Query
+Cursuscode: LINQ
+Duur: 2 dagen
+Startdatum: 22/03/2021
+
+Titel: Multithreading, Parallel Programming and Asynchronous Programming in C# .NET
+Cursuscode: THREADS
+Duur: 2 dagen
+Startdatum: 24/03/2021
+
+Titel: Developing Microsoft Blazor Web Applications
+Cursuscode: BLAZOR
+Duur: 5 dagen
+Startdatum: 22/03/2021
+
+Titel: Building a SPA with .NET Core, Vue and Identity Server
+Cursuscode: SPANETCORE
+Duur: 1 dagen
+Startdatum: 26/03/2021
+
+Titel: Developing services with gRPC in .NET
+Cursuscode: GRPCDEV
+Duur: 1 dagen
+Startdatum: 22/03/2021
+
+Titel: Developing ASP.NET Core MVC Web Applications
+Cursuscode: MS20486
+Duur: 5 dagen
+Startdatum: 22/03/2021
+
+Titel: Develop Applications Using the VueJS Library
+Cursuscode: VUEJS
+Duur: 3 dagen
+Startdatum: 24/03/2021
+
+Titel: Unit Testing in Visual Studio
+Cursuscode: UTVS
+Duur: 2 dagen
+Startdatum: 22/03/2021
+
+Titel: Advanced HTML and CSS
+Cursuscode: HTML
+Duur: 2 dagen
+Startdatum: 29/03/2021
+
+Titel: Building Professional Single Page Applications with Angular
+Cursuscode: ANGU
+Duur: 4 dagen
+Startdatum: 29/03/2021
+
+Titel: Pragmatic JavaScript
+Cursuscode: PRAGJS
+Duur: 3 dagen
+Startdatum: 31/03/2021
+
+Titel: Pragmatic JavaScript
+Cursuscode: PRAGJS
+Duur: 3 dagen
+Startdatum: 22/03/2021
+
+Titel: Building Professional Single Page Applications with Angular
+Cursuscode: ANGU
+Duur: 4 dagen
+Startdatum: 23/03/2021
+
+Titel: Advanced HTML and CSS
+Cursuscode: HTML
+Duur: 2 dagen
+Startdatum: 24/03/2021
+
+Titel: Unit Testing in Visual Studio
+Cursuscode: UTVS
+Duur: 2 dagen
+Startdatum: 01/04/2021
+
+Titel: Developing ASP.NET Core MVC Web Applications
+Cursuscode: MS20486
+Duur: 5 dagen
+Startdatum: 29/03/2021
+
