@@ -1,11 +1,28 @@
-<h1>  Weekoverzicht</h1>
-<label for="week"><h2>Week:</h2></label>
-<input (change)="getWeekInstances()" type="number" name="week" id="week" [value]="week" [(ngModel)]="week">
-<label for="year"><h2>Jaar:</h2></label>
-<input (change)="getWeekInstances()" type="number" name="year" id="year" [value]="year" [(ngModel)]="year">
-
-<button class="btn btn-primary mr-auto" (click)="getPreviousWeek()">&lt;=</button>
-<button class="btn btn-primary ml-auto" (click)="getNextWeek()">=&gt;</button>
+<h1>Weekoverzicht</h1>
+<div class="d-flex flex-row align-content-between">
+  <button class="btn btn-sm btn-primary" (click)="getPreviousWeek()">&lt;=</button>
+  <div class="m-auto">
+    <label for="week"><h2>Week:</h2></label>
+    <input
+      (change)="getWeekInstances()"
+      type="number"
+      name="week"
+      id="week"
+      [value]="week"
+      [(ngModel)]="week"
+    />
+    <label for="year"><h2>Jaar:</h2></label>
+    <input
+      (change)="getWeekInstances()"
+      type="number"
+      name="year"
+      id="year"
+      [value]="year"
+      [(ngModel)]="year"
+    />
+  </div>
+  <button class="btn btn-sm btn-primary ml-auto" (click)="getNextWeek()">=&gt;</button>
+</div>
 
 <table class="table table-striped table-bordered table-hover table-sm">
   <thead class="thead-dark">
@@ -18,7 +35,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let instance of weekInstances">
-      <td>{{ instance.startDate | formatDate}}</td>
+      <td>{{ instance.startDate | formatDate }}</td>
       <td>{{ instance.course.title }}</td>
       <td>{{ instance.course.lengthInDays }}</td>
       <td>{{ instance.course.code }}</td>
