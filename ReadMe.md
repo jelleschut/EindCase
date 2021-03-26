@@ -15,7 +15,7 @@
 
 ### Frontend
 -   Open de Frontend\frontend Folder met Visual Studio Code.
--   (Optioneel) Installeer @angular/cli met npm install -g @angular/cli in het terminal.
+-   (Optioneel) Installeer @angular/cli met npm install -g @angular/cli in het terminal wanneer deze nog niet geinstalleerd is.
 -   run ng serve in het terminal.
 
 ##  Resultaat
