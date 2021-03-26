@@ -1,10 +1,11 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,angular,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,angular,windows
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,angular,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,angular,windows
 
 ### Angular ###
 ## Angular ##
 # compiled output
+dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
@@ -31,6 +32,17 @@ e2e/*.map
 
 # System Files
 .DS_Store/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -80,12 +92,15 @@ mono_crash.*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
 x64/
 x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
+[Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
@@ -415,4 +430,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudio,angular,windows
+# End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,angular,windows
