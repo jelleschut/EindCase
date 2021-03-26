@@ -3,6 +3,7 @@ using EindCase.Api.Services.Interfaces;
 using EindCase.DAL;
 using EindCase.DAL.Repositories;
 using EindCase.Domain.Interfaces;
+using Microsoft.AspNetCore.Authentication.Certificate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,6 +41,9 @@ namespace EindCase.Api
             services.AddScoped<IInputValidatorService, InputValidatorService>();
 
             services.AddCors();
+
+            services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
+                .AddCertificate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +62,7 @@ namespace EindCase.Api
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
